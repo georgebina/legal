@@ -1,0 +1,21 @@
+<project default="deploy">
+	
+	<path id="saxon">
+		<pathelement location="tools/saxon/saxon9he.jar"/>
+	</path>	
+	
+	<target name="clean">
+		<delete dir="tmp"/>
+		<delete dir="txt"/>
+	</target>
+	
+	<target name="transform">	
+		<xslt out="tmp/dummy.xml" in="xml/EULA_OXYGEN.xml" xslresource="xsl/all-legal.xsl">
+			<classpath refid="saxon"/>
+		</xslt>
+		<delete dir="tmp"/>
+	</target>
+	
+	<target name="deploy" depends="clean, transform"/>
+	
+</project>
