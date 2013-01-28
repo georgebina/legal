@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.oxygenxml.com/legal-document"
+  xmlns="http://www.oxygenxml.com/legal-document" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:xi="http://www.w3.org/2001/XInclude" elementFormDefault="qualified">
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
+  <xs:import namespace="http://www.w3.org/2001/XInclude" schemaLocation="xinclude.xsd"/>
+
+  <xs:element name="eula" type="eulaType">
+    <xs:annotation>
+      <xs:documentation>End User License Agreement.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="addendum" type="eulaType">
+    <xs:annotation>
+      <xs:documentation>End User License Agreement Addendum.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+
+
+  <xs:element name="info">
+    <xs:annotation>
+      <xs:documentation>Information about this license agreement.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="title"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="important">
+    <xs:annotation>
+      <xs:documentation>A section that contains important information, usually written in upper case.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="xmlAttributes"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="section">
+    <xs:annotation>
+      <xs:documentation>A section of the agreement.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="title">
+          <xs:annotation>
+            <xs:documentation>Main section title</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:choice minOccurs="1" maxOccurs="unbounded">
+          <xs:element ref="item">
+            <xs:annotation>
+              <xs:documentation>Subsection content</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element ref="list">
+            <xs:annotation>
+              <xs:documentation>List of terms inside a subsection</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="xmlAttributes"/>
+      <xs:attributeGroup ref="profilingAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="title">
+    <xs:annotation>
+      <xs:documentation>Agreement or section title.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="phrase" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="list">
+    <xs:annotation>
+      <xs:documentation>A list of items.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="item"/>
+      </xs:sequence>
+      <xs:attribute name="numeration" use="required" type="listNumeration">
+        <xs:annotation>
+          <xs:documentation>Specifies how items inside this list should be numbered, with letters or with numbers, default they will be numbered with numbers.</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attributeGroup ref="profilingAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="item">
+    <xs:annotation>
+      <xs:documentation>An item.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="list"/>
+        <xs:element ref="phrase"/>
+        <xs:element ref="ref"/>
+      </xs:choice>
+      <xs:attributeGroup ref="xmlAttributes"/>
+      <xs:attributeGroup ref="profilingAttributes"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="phrase">
+    <xs:annotation>
+      <xs:documentation>Used to mark a text with specific attributes - usually profiling attributes in order to include the text only in specific deliverables.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="ref"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="profilingAttributes"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ref">
+    <xs:annotation>
+      <xs:documentation>A reference to a section or an item.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:attribute name="refId" type="xs:IDREF">
+        <xs:annotation>
+          <xs:documentation>The xml:id value of the referred section or item.</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="xmlAttributes">
+    <xs:attribute ref="xml:id"/>
+    <xs:attribute ref="xml:base"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="profilingAttributes">
+    <xs:attribute name="product" type="productName"/>
+    <xs:attribute name="range" type="range"/>
+    <xs:attribute name="edition" type="edition"/>
+  </xs:attributeGroup>
+
+  <xs:simpleType name="listNumeration">
+    <xs:list>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="numeric"/>
+          <xs:enumeration value="alpha"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:list>
+  </xs:simpleType>
+
+  <xs:complexType name="eulaType">
+    <xs:sequence>
+      <xs:element ref="info">
+        <xs:annotation>
+          <xs:documentation>Information about the product being licensed.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element ref="important">
+        <xs:annotation>
+          <xs:documentation>Important note about this agreement</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element ref="section">
+          <xs:annotation>
+            <xs:documentation>A main section of this agreement.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element ref="xi:include"/>
+      </xs:choice>
+      <xs:element minOccurs="0" ref="addendum"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="xmlAttributes"/>
+    <xs:attributeGroup ref="profilingAttributes"/>
+    <xs:attribute name="revisionDate" type="xs:date">
+      <xs:annotation>
+        <xs:documentation>The date of the last revision.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  
+  <xs:simpleType name="productName">
+    <xs:list itemType="productNameValues"/>
+  </xs:simpleType>
+  <xs:simpleType name="productNameValues">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  
+  <xs:simpleType name="range">
+    <xs:list itemType="rangeValues"/>
+  </xs:simpleType>
+  <xs:simpleType name="rangeValues">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  
+  <xs:simpleType name="edition">
+    <xs:list itemType="editionValues"/>
+  </xs:simpleType>
+  <xs:simpleType name="editionValues">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  
+</xs:schema>

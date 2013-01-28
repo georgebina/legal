@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.oxygenxml.com/legal-document"
+  xmlns="http://www.oxygenxml.com/legal-document" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:xi="http://www.w3.org/2001/XInclude" elementFormDefault="qualified">
+  
+  <xs:annotation>
+    <xs:documentation>This schema defines the values for profiling attributes by redefining
+      the simple type that provide the possible values for each profiling attribute</xs:documentation>
+  </xs:annotation>
+
+  <xs:redefine schemaLocation="legal.xsd">
+    <xs:simpleType name="productNameValues">
+      <xs:restriction base="productNameValues">
+        <xs:enumeration value="EDITOR"/>
+        <xs:enumeration value="DEVELOPER"/>
+        <xs:enumeration value="AUTHOR"/>
+        <xs:enumeration value="DIFF"/>
+        
+      </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="rangeValues">
+      <xs:restriction base="rangeValues">
+        <xs:enumeration value="CLASS"/>
+        <xs:enumeration value="DEPARTMENTAL"/>
+        <xs:enumeration value="SITE"/>
+        <xs:enumeration value="CORPORATE"/>
+        <xs:enumeration value="USER"/>
+      </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="editionValues">
+      <xs:restriction base="editionValues">
+        <xs:enumeration value="ACADEMIC"/>
+        <xs:enumeration value="PROFESSIONAL"/>
+        <xs:enumeration value="ENTERPRISE"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:redefine>
+
+</xs:schema>
