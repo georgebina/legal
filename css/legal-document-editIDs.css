@@ -1,0 +1,44 @@
+@import "legal-document.css";
+@namespace xml "http://www.w3.org/XML/1998/namespace";
+
+item[xml|id]:before{
+    content :
+      counter(section) "." counter(item-counter) ". "
+      oxy_textfield(
+            edit, "@xml:id",
+            columns, 20) !important;
+} 
+
+
+section[xml|id]:before{
+    content :
+      oxy_textfield(
+            edit, "@xml:id",
+            columns, 40);
+} 
+
+addendum[xml|id]:before{
+    content :
+      oxy_textfield(
+            edit, "@xml:id",
+            columns, 40);
+} 
+important[xml|id]:before{
+    content :
+      oxy_textfield(
+            edit, "@xml:id",
+            columns, 40);
+}
+
+
+ref[refId] {
+  content : oxy_combobox(
+            edit, "@refId",
+            columns, 20);
+}
+
+ref {
+  content : oxy_combobox(
+            edit, "@refId",
+            columns, 20);
+}

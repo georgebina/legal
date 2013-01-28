@@ -1,0 +1,100 @@
+@namespace xml "http://www.w3.org/XML/1998/namespace";
+
+section, important, para, list, item, title, eula {
+    display:block;
+}
+
+eula:before {
+    color: red;
+    font-weight:bold;   
+    content: 
+        oxy_label(text,"LAST REVISON DATE: ", width, 200px)
+        oxy_datePicker(
+            columns, 16, 
+            edit, "@revisionDate",
+            format, "yyyy-MM-dd"
+        )
+}
+
+eula, addendum {
+    counter-reset:section;
+}
+
+/* section items */
+
+important:before {
+    display:block;
+}
+important {
+    margin:1em;
+}
+
+section > item:before {
+    content:  counter(section) "." counter(item-counter) ". ";
+}
+
+*[xml|id]:before{
+    content: "[" attr('xml|id')  "] ";
+    font-style:italic;
+    font-size:smaller;
+} 
+
+section > item[xml|id]:before {
+    content:  counter(section) "." counter(item-counter) ". " "[" attr('xml|id')  "] ";
+}
+
+section > item {
+    counter-increment: item-counter;
+}
+
+/* sections and titles */
+
+section {
+    margin:0.5em;
+    counter-increment: section;
+    counter-reset: item-counter;
+}
+
+section > title:before{
+    content: counter(section) ". ";
+}
+    
+title {
+    font-size:larger;
+    font-weight:bold;    
+}
+
+/* list items */
+
+list [numeration = 'alpha']> item {
+    list-style-type:lower-latin; 
+}
+
+list > item {
+    list-style-type:decimal;
+    display:list-item;
+    margin-left:2em;
+    margin-top:0.3em;
+    margin-bottom:0.3em;
+}
+
+/* references */
+ref:before {
+  content : '[' attr(refId) ']';
+  font-style:italic;
+  text-decoration:underline;
+  link: '#' attr(refId);  
+}
+
+ref[refId] {
+  -oxy-display-tags: none;
+  content:none;
+}
+
+ref {
+  content : oxy_combobox(
+            edit, "@refId",
+            columns, 20,
+            editable, false);
+}
+
