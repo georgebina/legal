@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addendum xmlns="http://www.oxygenxml.com/legal-document"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:id="addendum"
+    range="CLASS DEPARTMENTAL SITE">
+    <info>
+        <title>oXygen XML Editor <phrase edition="ACADEMIC">Academic</phrase><phrase
+                edition="PROFESSIONAL">Professional</phrase>
+            <phrase edition="ENTERPRISE">Enterprise</phrase><phrase range="CLASS"
+                >Classroom</phrase><phrase range="DEPARTMENTAL">Departmental</phrase><phrase
+                range="SITE">Site</phrase> License Agreement - Addendum</title>
+    </info>
+    <important>THIS IS AN
+        ADDENDUM<?oxy_insert_start author="stefan" timestamp="20120620T142100+0300"?> (THE
+        "ADDENDUM")<?oxy_insert_end?> TO OXYGEN XML EDITOR END USER LICENSE AGREEMENT (THE
+        &quot;AGREEMENT&quot;), AND THE TERMS AND CONDITIONS OF THIS ADDENDUM ARE INCORPORATED
+        THEREIN. EACH CAPITALIZED TERM USED HEREIN AND NOT DEFINED HEREIN SHALL HAVE THE MEANING
+        ASCRIBED TO IT IN THE AGREEMENT.</important>
+    <section>
+        <title>Scope</title>
+        <item>The provisions of this <phrase range="CLASS">Classroom</phrase><phrase
+                range="DEPARTMENTAL">Departmental</phrase><phrase range="SITE">Site</phrase> License
+            apply to the oXygen XML <phrase edition="ACADEMIC">Academic</phrase><phrase
+                edition="PROFESSIONAL">Professional</phrase><phrase edition="ENTERPRISE"
+                >Enterprise</phrase> Edition. In the event of a conflict between the provisions of
+            this Addendum and the Agreement,
+            the<?oxy_delete author="stefan" timestamp="20120620T142147+0300" content="se"?> Addendum
+            provisions shall apply.</item>
+    </section>
+    <section range="CLASS">
+        <title>Installation and use</title>
+        <item>You may: <list numeration="alpha">
+                <item>Use the Software for non-commercial classroom teaching educational services.
+                    You certify that use is directly related to classroom teaching that use is
+                    strictly for noncommercial purposes.</item>
+                <item>Install the Software on each computer within the classroom in which You teach
+                    only, regardless of how many students You teach in the classroom on up to 25
+                    computers (seats).</item>
+                <item>Install the Software on a personal computer used by the individual student
+                    covered by this license at home for instructional preparation only.</item>
+                <item>Individual teachers covered by this license are entitled to a free Home
+                    Edition license.</item>
+            </list>
+        </item>
+    </section>
+    <section range="DEPARTMENTAL">
+        <title>Installation and use</title>
+        <item>You may:<list numeration="alpha">
+                <item>Use the Software solely in non-commercial departmental teaching and research
+                    programs. You are permitted to distribute copies of the Software to faculty
+                    members, staff, and students, officers, employees ("Recipients") within the
+                    licensed department. Recipients may not keep or use the Software when they
+                    finish their courses or leave the department. </item>
+                <item>Install the Software on any computer that is in regular use at the facilities
+                    of the Department. All copies of the Software must be removed from each computer
+                    that is taken out of regular use at the facilities of the Department. </item>
+                <item>Install the Software on a personal computer used by the Recipient covered by
+                    this license at home for instructional preparation only. </item>
+                <item>Individual teachers covered by this license are entitled to a free Home
+                    Edition license.</item>
+            </list></item>
+    </section>
+    <section range="SITE">
+        <title>Installation and use</title>
+        <item>You may: <list numeration="alpha">
+                <item>Install the Software on any computer that is located at any of Your
+                    facilit<?oxy_insert_start author="stefan" timestamp="20120620T142331+0300"?>ies<?oxy_insert_end?><?oxy_delete author="stefan" timestamp="20120620T142333+0300" content="y"?>
+                    within a 3 mile radius around Your address (the "Site Location"). All copies of
+                    the Software must be removed from each computer that is taken out of regular use
+                    at the facilities of the Site Location. </item>
+                <item><phrase edition="ACADEMIC">Use the Software solely in non-commercial teaching
+                        and research programs.</phrase> You are permitted to distribute copies of
+                    the Software to the members, staff, and <phrase edition="ACADEMIC">students,
+                        officers,</phrase> employees ("Recipients") within the licensed Site
+                    Location. Recipients may not keep or use the Software when they finish their
+                    courses or leave the Site Location. </item>
+                <item edition="ACADEMIC">Install the Software on a personal computer used by the
+                    Recipient covered by this license at home for instructional preparation
+                    only.</item>
+                <item edition="ACADEMIC"> Individual teachers covered by this license are entitled
+                    to a free Home Edition license.</item>
+            </list></item>
+    </section>
+    <section>
+        <title>Maintenance pack.</title>
+        <item>First year Maintenance Pack is included.</item>
+    </section>
+    <section>
+        <title>Assignment.</title>
+        <list numeration="alpha">
+            <item><phrase range="CLASS">Classroom</phrase><phrase range="DEPARTMENTAL"
+                    >Departmental</phrase><phrase range="SITE">Site</phrase> license is
+                nontransferable. You may not transfer ownership of this license to anyone else. You
+                may not distribute copies to personnel in other <phrase range="CLASS"
+                    >classrooms</phrase><phrase range="DEPARTMENTAL">departments or
+                    institutions</phrase><phrase range="SITE">Site Locations</phrase>.</item>
+            <item edition="ACADEMIC">When schools or educational institutions acquire the <phrase
+                    range="CLASS">Classroom</phrase><phrase range="DEPARTMENTAL"
+                    >Departmental</phrase><phrase range="SITE">Site</phrase> License, the Software
+                can only be installed to the computers in one <phrase range="DEPARTMENTAL"
+                    >department</phrase><phrase range="SITE">Site Location</phrase><phrase
+                    range="CLASS">classroom at a time and previous installations should be
+                    uninstalled</phrase>.</item>
+        </list>
+    </section>
+</addendum>
+

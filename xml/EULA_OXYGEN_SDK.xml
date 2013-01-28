@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eula xmlns="http://www.oxygenxml.com/legal-document" revisionDate="2012-11-06+02:00">
+    <info>
+        <title>oXygen XML Editor SDK License Agreement</title>
+    </info>
+    <xi:include href="EULA_OXYGEN.xml" xpointer="important"
+        xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <section>
+        <title>DEFINITION</title>
+        <list numeration="alpha">
+            <item> "Syncro" means Syncro Soft S.R.L.</item>
+            <item>"Oxygen" means the specific software products for editing and authoring XML
+                documents, that Syncro have developed as featured on http://www.oxygenxml.com
+                website. Oxygen includes any new releases, upgrades, updates and on-line or
+                electronic documentation.</item>
+            <item>"Licensee" (or "You") means the individual who or entity that accepted and agreed
+                to be bound by the terms and conditions of this License.</item>
+            <item>An "Add-on" means a software program or a custom configuration framework that
+                works within Oxygen (it cannot operate on its own). Oxygen supports Add-ons to
+                enable third-party developers to create specific abilities which extend Oxygen
+                features. Examples of such Add-ons are: plug-ins, new frameworks for XML document
+                types, customization of an Oxygen framework for a default document type (DITA,
+                DocBook, TEI, etc.) or extensions to access Oxygen XML Eclipse plug-in features from
+                your own Eclipse plug-in.</item>
+            <item>"Software" means the Oxygen XML Software Development Kit (SDK) which enables you
+                to develop Add-ons or Applications (as defined in section
+                    <?oxy_insert_start author="georgebina" timestamp="20130125T034203+0200"?><ref
+                    refId="grants"
+                /><?oxy_insert_end?><?oxy_delete author="georgebina" timestamp="20130125T034200+0200" content="2.1"?>).
+                The Software is comprised of libraries, source code, APIs, sample code and online or
+                electronic documentation.</item>
+        </list>
+    </section>
+    <section xml:id="licenseGrants">
+        <title>LICENSE GRANTS</title>
+        <item xml:id="grants">Subject to all the terms and conditions set forth in this Agreement,
+            Syncro hereby grants You a limited, non-exclusive, revocable, non-sublicensable and
+            non-transferable license to:<list numeration="alpha">
+                <item>Install a reasonable number of copies of the Software on computers owned or
+                    controlled by you, to be used internally by you or your authorized users for the
+                    sole purpose of internal evaluation, testing and "Development Activity" in
+                    strict compliance with the terms stated below. For the purpose of this
+                    Agreement, "Development Activity" means the activity to: <list
+                        numeration="alpha">
+                        <item>Develop Add-ons designed to function within Oxygen. A license for
+                            deploying such Add-ons to end-users is granted royalty fee, under your
+                            own terms and conditions.</item>
+                        <item>Integrate the Software with any custom software application that you
+                            have developed ("Application") as more explicitly defined in section
+                                <?oxy_insert_start author="georgebina" timestamp="20130125T034402+0200"?><ref
+                                refId="ac-enduserapp"
+                            /><?oxy_insert_end?><?oxy_delete author="georgebina" timestamp="20130125T034359+0200" content="3.2"?>.The
+                            part of the Software that is integrated in Application is defined as
+                            "Author Component" and a license for deploying such Application to
+                            end-users is granted according to section
+                                <?oxy_insert_start author="georgebina" timestamp="20130125T034518+0200"?><ref
+                                refId="authorComponent"
+                            /><?oxy_insert_end?><?oxy_delete author="georgebina" timestamp="20130125T034446+0200" content="3 (&quot;Author Component &quot;)"?>.</item>
+                    </list></item>
+                <item>You may make one copy of the Software in machine-readable form for backup
+                    purposes only. The backup copy must include all copyright information contained
+                    on the original.</item>
+            </list></item>
+    </section>
+    <section xml:id="authorComponent">
+        <title>AUTHOR COMPONENT </title>
+        <item>If you intend to integrate Author Component into your Application, you must register
+            to Syncro and request an Author Component Development Key that will enable you to use
+            the Software for free for twelve (12) months after installation ("Development Period")
+            for Development Activity only. The Development Period may be extended for successive
+            terms of one year subject to written request to Syncro. The Software contains a feature
+            that will automatically disable it at the end of Development Period. Syncro will have no
+            liability to you if this feature disables the Software. </item>
+        <item xml:id="ac-enduserapp">The Application developed by You must be an "end user
+            application." An "end user application" is a specific application program that is
+            licensed to a person or company for personal or business use and not with a view toward
+            redistributing the application or any part of the application, and may be either an
+            application that is used by Licensee internally, or an application that is commercially
+            distributed to end users for their use. An end user of an Application may not modify or
+            redistribute the Application and may not copy it (other than for archival purposes).
+            Licensee's license agreement covering the Application must contain restrictions
+            prohibiting redistribution, modification and copying of the Application. You agree to
+            defend, indemnify and hold harmless Syncro, and its officers, directors, employees,
+            agents and representatives, from or in connection with damages, liabilities, costs and
+            expenses (including reasonable attorneys' fees) incurred by Syncro on account of you not
+            including these terms in any of your customer license agreements. </item>
+        <item>Deployment license grant. Subject to all the terms and conditions set forth in this
+            Agreement, including without limitation, the payment of the runtime licensing fees
+            described in section
+                <?oxy_insert_start author="georgebina" timestamp="20130125T034616+0200"?><ref
+                refId="authorComponent"
+            /><?oxy_insert_end?><?oxy_delete author="georgebina" timestamp="20130125T034613+0200" content="3"?>
+            hereof, Syncro hereby grants You a non-exclusive, non-transferable, worldwide license to
+            reproduce exact copies of the Author Component and include such files in the
+            Application, and to deploy the Application on your owned and controlled computers and
+            networks for use by your employees, contractors and affiliates and/or to commercially
+            distribute the Application, directly and through customary distribution channels, to end
+            users for their use without further distribution. You must purchase a runtime license
+            for each deployment of Application. Such licenses are available only from Syncro and
+            Syncro distributors. For purposes hereof, a "Deployment of Application" includes
+            Name-User Deployments and Concurrent Deployments as hereinafter defined:<list
+                numeration="alpha">
+                <item>Named or Concurrent Oxygen Licenses - If the Application will be used by You
+                    internally,You will have the option to buy or use already bought regular Oxygen
+                    software licenses that will enable (more than the normal usage conferred by the
+                    Oxygen license) the runtime usage of the Author Component as it was integrated
+                    into the Application.</item>
+                <item>Author Component Named-User Deployment. An "Author Component Named-user
+                    Deployment" means installation of the Application by You and/or your customers
+                    for use by a single named user. The sharing of the Named-user Deployment License
+                    by more than one individual is expressly prohibited.</item>
+                <item>Author Component Concurrent Deployment. An "Author Component Concurrent
+                    Deployment" means that
+                    <?oxy_insert_start author="stefan" timestamp="20121109T105723+0200"?>You have
+                    built a method of concurrency control into the Application so that
+                    <?oxy_insert_end?>the number of end users belonging to one of your customers
+                    accessing the Application at any one time may not exceed the number of
+                    concurrent deployment licenses obtained by You for that customer. For each of
+                    your customers You are required to purchase a separate Component Concurrent
+                    Deployment
+                    license.<?oxy_insert_start author="stefan" timestamp="20121113T085919+0200"?>
+                    Concurrent Deployment Licenses are available in perpetual or subscription term
+                    <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>(as described
+                    in section
+                        <?oxy_insert_end?><?oxy_insert_start author="georgebina" timestamp="20130125T034706+0200"?><ref
+                        refId="licenseRestrictions"
+                    /><?oxy_insert_end?><?oxy_delete author="georgebina" timestamp="20130125T034704+0200" content="4"?><?oxy_insert_start author="stefan" timestamp="20121113T085919+0200"?>)<?oxy_custom_end?><?oxy_insert_end?><?oxy_insert_start author="georgebina" timestamp="20130122T103734+0200"?>.<?oxy_insert_end?></item>
+                <item>Author Component Subscription Deployment. If You licensed the Author Component
+                    on a subscription basis, the end-user right to access the Author Component
+                    integrated into your Application is limited to the subscription period that
+                    shall be indicated in your accepted order.
+                    <?oxy_insert_start author="stefan" timestamp="20121106T130037+0200"?>You agree
+                    to take such steps as are appropriate to ensure that after the expiration of the
+                    subscription period, the end-user is no longer entitled to use or access the
+                    Author Component.<?oxy_insert_end?></item>
+                <?oxy_insert_start author="stefan" timestamp="20121107T151237+0200"?>
+                <item>Author Component Applet License. Allows Application built with Software to be
+                    deployed to an application server used to directly
+                    deploy<?oxy_insert_end?><?oxy_insert_start author="Bogdan" timestamp="20121115T171014+0200"?>
+                    the<?oxy_insert_end?><?oxy_insert_start author="stefan" timestamp="20121107T151237+0200"?>
+                    Application to end-users to be used from a web-browser. In this case You have to
+                    build an access control mechanism so that each end-user that
+                    access<?oxy_insert_end?><?oxy_insert_start author="Bogdan" timestamp="20121115T171042+0200"?>es<?oxy_insert_end?><?oxy_insert_start author="stefan" timestamp="20121107T151237+0200"?>
+                    the Application from a web-browser should be authenticated and logged on. The
+                    royalty for this license is
+                    <?oxy_insert_end?><?oxy_delete author="Bogdan" timestamp="20121115T171209+0200" content="function of"?><?oxy_insert_start author="Bogdan" timestamp="20121115T171210+0200"?>directly
+                    proportional
+                    with<?oxy_insert_end?><?oxy_insert_start author="stefan" timestamp="20121107T151237+0200"?>
+                    the number of unique named users that
+                    <?oxy_insert_end?><?oxy_delete author="Bogdan" timestamp="20121115T171229+0200" content="used"?><?oxy_insert_start author="Bogdan" timestamp="20121115T171229+0200"?>accessed<?oxy_insert_end?><?oxy_insert_start author="stefan" timestamp="20121107T151237+0200"?>
+                    the Application during one month. </item>
+                <?oxy_insert_end?>
+            </list></item>
+        <item>Evaluation and Demo Versions. If the Application is sold commercially by You, then You
+            may have an evaluation version of the Application that You make available free of charge
+            to prospects, provided the evaluation version expires within 30 days of a prospect's
+            installation of the evaluation version, and provided it is covered by an evaluation
+            license agreement that provides that the prospect may only use it for evaluation
+            purposes. In addition, You may issue a reasonable number of demonstration copies of the
+            Application to your sales and support staff, for their use in connection with selling
+            and supporting the Application. No runtime license fees will be payable for evaluation
+            and demo versions of the Application deployed in accordance with this paragraph. </item>
+        <?oxy_insert_start author="stefan" timestamp="20121108T145039+0200"?>
+        <item> Prepayment of License Fees. Initially, prepayment is required for all deployment
+            license orders and a separate Deployment License Key will be
+            <?oxy_insert_end?><?oxy_delete author="Bogdan" timestamp="20121115T171406+0200" content="generated"?><?oxy_insert_start author="Bogdan" timestamp="20121115T171406+0200"?>provided<?oxy_insert_end?><?oxy_insert_start author="stefan" timestamp="20121108T145039+0200"?>
+            by Syncro for each order to be embedded into the Application to authenticate licensed
+            copies of the Author Component. If You are later approved by Syncro for "Monthly
+            Reporting and Payment" (see section
+                <?oxy_insert_end?><?oxy_insert_start author="georgebina" timestamp="20130125T034814+0200"?><ref
+                refId="monthlyReporting"
+            /><?oxy_insert_end?><?oxy_delete author="georgebina" timestamp="20130125T034813+0200" content="3.6"?><?oxy_insert_start author="stefan" timestamp="20121108T145039+0200"?>),
+            Syncro will <?oxy_insert_end?><?oxy_delete author="Bogdan" timestamp="20121115T171455+0200" content="generate"?><?oxy_insert_start author="Bogdan" timestamp="20121115T171455+0200"?>provide<?oxy_insert_end?><?oxy_insert_start author="stefan" timestamp="20121108T145039+0200"?>
+            <?oxy_insert_end?><?oxy_delete author="Bogdan" timestamp="20121115T171458+0200" content="for "?><?oxy_insert_start author="stefan" timestamp="20121108T145039+0200"?>You
+            a Runtime Deployment License Key that can be embedded into your Application and used for
+            any of Your
+            customers<?oxy_insert_end?><?oxy_insert_start author="Bogdan" timestamp="20121115T172238+0200"?>,
+            <?oxy_insert_end?><?oxy_delete author="Bogdan" timestamp="20121115T172236+0200" content="."?><?oxy_insert_start author="Bogdan" timestamp="20121115T172244+0200"?>as
+            long as Deployments are reported and paid in a timely
+            manner.<?oxy_insert_end?><?oxy_insert_start author="stefan" timestamp="20121108T145039+0200"?></item>
+        <?oxy_insert_end?>
+        <item xml:id="monthlyReporting"
+            ><?oxy_insert_start author="stefan" timestamp="20121109T103248+0200"?>If You are
+            approved by Syncro for "Monthly Reporting and Payment"<?oxy_insert_end?><?oxy_delete author="stefan" timestamp="20121115T165125+0200" content="Reporting and Payment. "?><?oxy_insert_start author="stefan" timestamp="20121115T165126+0200"?>
+            <?oxy_insert_end?>You agree to maintain full, clear and accurate records as to all
+            Deployments of the Application. If You are commercially distributing the Application
+            through distributors or resellers, You will ensure that your distributors and resellers
+            maintain adequate records to reflect all licenses in the Application that are sold or
+            otherwise distributed by such parties. Syncro will send You a monthly deployment report
+            form to complete at the end of each month and You will submit the report to Syncro,
+            within ten (10) days of the close of each calendar month, setting forth the number of
+            Deployments of Application, and the type of Deployment made during such month. If
+            Licensee has new Deployments for the month, Licensee will pay Syncro the applicable
+            runtime license fee. Syncro shall have the right, no more than once during any calendar
+            year, to have an independent certified public accountant inspect the relevant records of
+            Licensee on thirty (30) days notice and during regular business hours to verify the
+            reports and payments required to be made hereunder. Should an underpayment in excess of
+            five percent (5%) be discovered, You shall pay the cost of the audit. If You are more
+            than thirty (30) days late with any payment of amount due hereunder, interest will
+            accrue from the date due until paid at the lesser of (i) 1.5% per month or (ii) the
+            maximum rate of interest permitted by law. All amounts due hereunder are based on United
+            States currency. </item>
+        <item>Author Component Support and Maintenance Pack.<list numeration="numeric">
+                <item>A Support and Maintenance Pack ("SMP") is a time-limited right for Author
+                    Component technical support, updates, and upgrades, which you may elect to
+                    purchase in addition to the corresponding Deployment of Application for your
+                    end-user. Technical support only covers issues or questions resulting directly
+                    out of the operation of the Author Component. Syncro will not provide you or
+                    your end-user with generic consultation, assistance, or advice under any other
+                    circumstances.</item>
+                <item>If you redeploy the Application with the new major version of the Author
+                    Component and if your end-user's Author Component SMP is still in force, he is
+                    entitled to this release of the Application, with no additional fee. If you do
+                    not purchase SMP for your end-user, he will not be entitled to this release of
+                    the Application unless the Author Component update or upgrade will be provided
+                    free of charge by Syncro, under certain circumstances, or you will buy an
+                    Application Component upgrade for that end-user.</item>
+                <item>If you licensed Author Component Subscription Deployment, SMP is included in
+                    the applicable subscription fee, and is valid for the entire subscription
+                    period.</item>
+                <item> For end-users that purchase or already own multiple Deployment of Application
+                    licenses, an SMP must be purchased for each license.</item>
+            </list></item>
+        <item>Certain rights are not granted under this Agreement, but may be available under a
+            separate agreement. Contact Syncro (support@oxygenxml.com) if you would like to sign a
+            Value Added Reseller agreement.</item>
+    </section>
+    <section xml:id="licenseRestrictions">
+        <title>LICENSE RESTRICTIONS</title>
+        <item>The license granted under this Agreement is expressly conditioned upon your compliance
+            with all the terms and conditions of this Agreement. Restrictions regarding your use of
+            the Software are as follows:<list numeration="alpha">
+                <item>You may only integrate Author Component if you registered to Syncro for an
+                    Author Component Development Key. You must ensure that the Author Component
+                    Deployment license key will not be deployed to end-users or seen in any way when
+                    used in Application binary code. </item>
+                <item>You may not use, copy, rent, lease, sell, sub-license, assign or otherwise
+                    transfer the Software except as expressly provided for in this Agreement.</item>
+                <item>You may not modify, port, adapt or translate the Software. You may not reverse
+                    engineer, decompile, disassemble or otherwise attempt to discover the source
+                    code of the Software.</item>
+                <item>You may not expose the API (application program interface) provided by
+                    Software to your end users and You may not use or call any classes or methods
+                    that are not documented as part of the API.</item>
+                <item>You may not use the SDK to develop and market an Add-on or Application which
+                    consists of a development kit, a component, or an software product liable to
+                    directly compete with Oxygen. </item>
+                <item>You may only distribute, use or sub-license the Application developed using
+                    the Software if You purchase a Runtime (Deployment) license, as described in
+                    Section
+                        <?oxy_insert_start author="georgebina" timestamp="20130125T034910+0200"?><ref
+                        refId="licenseGrants"
+                    /><?oxy_insert_end?><?oxy_delete author="georgebina" timestamp="20130125T034907+0200" content="2"?>.</item>
+                <item>You agree that you will not use the Software to create, develop an Add-on or
+                    Application which: <list numeration="alpha">
+                        <item>contains any spyware, malware, virus, worm, Trojan horse, or other
+                            malicious or harmful code that are intended to damage, detrimentally
+                            interfere with, surreptitiously intercept or expropriate any system,
+                            data or personal information; </item>
+                        <item>when used in the manner in which it is intended, violates any material
+                            law, statute, ordinance or regulation (including without limitation the
+                            laws and regulations governing export control, unfair competition, anti
+                            discrimination, or false advertising).</item>
+                    </list></item>
+                <item>You shall not make any statements that your Add-on or Application is
+                    "certified", or that its performance is guaranteed by Syncro. You shall not make
+                    any statements implying that You are a Syncro "development partner" or that You
+                    have a relationship with Syncro, except for any relationship as Syncro may
+                    expressly acknowledge in writing. </item>
+            </list></item>
+    </section>
+    <section>
+        <title>DEMONSTRATION COPY</title>
+        <item>Syncro may, without obligation, at your request, promote your Add-ons or Application
+            ("Customization") on Syncro website or in other marketing materials. You hereby grant to
+            Syncro a non-exclusive, royalty-free license to use your trademarks associated with for
+            Syncro use in connection with Syncro promotion, if any, of such Customization. At Syncro
+            request, Syncro may become a reseller of the Customization on terms mutually agreeable
+            to You and Syncro.</item>
+    </section>
+    <section>
+        <title>OWNERSHIP AND INTELLECTUAL PROPERTY RIGHTS</title>
+        <item>The items in the Software are the intellectual property of Syncro and its suppliers
+            and are protected by United States copyright and patent law, international treaty
+            provisions and applicable laws of the country in which it is being used. You agree to
+            protect all copyright and other ownership interests of Syncro and/or its suppliers in
+            the Software supplied under this Agreement. You agree that all copies of the items in
+            the Software, reproduced for any reason by You, contain the same copyright notices, and
+            other proprietary notices as appropriate, as appear on or in the master items delivered
+            by Syncro in the Software. Syncro and/or its suppliers retain title and ownership of the
+            items in the Software, and all subsequent copies.</item>
+        <item>Except as stated herein, this Agreement does not grant You any rights to patents,
+            copyrights, trade secrets, trademarks, or any other rights in respect to the items in
+            the Software, and all rights not expressly granted are reserved by Syncro and its
+            suppliers.</item>
+        <item>You may, from time to time, voluntarily elect to provide suggestions, comments and
+            other feedback ("Feedback") to Syncro with respect to the Software. Syncro may, in
+            connection with any of its products, services, specifications or technologies, freely
+            use, copy, disclose, license, distribute and exploit any Feedback in any manner without
+            any obligation or restriction based on intellectual property rights or otherwise. Syncro
+            shall retain ownership of any Feedback. You shall not provide any Feedback subject to
+            any terms that would impose any obligation on Syncro. </item>
+        <item>Nothing in this Agreement shall be deemed to preclude Syncro from entering into
+            agreements with or otherwise engaging other developers who may develop a similar
+            Application or Add-on.</item>
+    </section>
+    <xi:include href="EULA_OXYGEN.xml" xpointer="patent_and_copyright_indemnity"
+        xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="EULA_OXYGEN.xml" xpointer="warranties"
+        xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <section>
+        <title>TECHNICAL SUPPORT</title>
+        <item>Syncro shall make available to You maintenance releases and updates to Software, as
+            they become available as part of the maintenance and support service for Oxygen.
+            Technical support services include telephone, web and/or email clarifications of the
+            functions and features of the Software to assist You in developing your Add-on or
+            Application. Any technical support that may be provided by Syncro shall be provided
+            without warranties of any kind, unless separately agreed in writing between the
+            parties.</item>
+        <item>You shall be solely responsible for providing, and agree that you will provide,
+            customer, technical, and help desk support to your end users of the Application or
+            Add-on.</item>
+    </section>
+    <xi:include href="EULA_OXYGEN.xml" xpointer="liability"
+        xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="EULA_OXYGEN.xml" xpointer="high_risk_activities"
+        xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <section>
+        <title>THIRD PARTY SOFTWARE</title>
+        <item>The Software includes certain runtime libraries and files intended for duplication and
+            distribution by You within the Application to the end-user of Application
+            ("Redistributables").These Redistributables may require additional terms and conditions.
+            Such required Redistributables notices and/or additional terms and conditions are
+            located at http://www.oxygenxml.com/thirdparty/index.html and are made a part of and
+            incorporated by reference into this Agreement. By accepting this Agreement, You are also
+            accepting the additional terms and conditions, if any, forth therein.</item>
+    </section>
+    <section>
+        <title>TERM AND TERMINATION</title>
+        <item> You may terminate this Agreement at any time by removing the Software from the
+            computers on which you had install it. Upon any termination of this Agreement, you shall
+            immediately discontinue use of the Software and destroy all copies of the Software. </item>
+        <item>If you are using an Application Component Development Key, this Agreement will
+            terminate at the end of Development Period unless extended by Syncro consent.</item>
+        <item>Syncro may terminate the Agreement immediately, without judicial intervention, if You
+            fail to comply with any term of this License Agreement. Upon such termination, You shall
+            cease using the Software and cease using or distributing the Add-on or Application
+            containing the Software. Termination will not affect properly granted end user licenses
+            of the Add-on or Application distributed by You prior to termination.</item>
+    </section>
+    <xi:include href="EULA_OXYGEN.xml" xpointer="export" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="EULA_OXYGEN.xml" xpointer="general" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</eula>
+<?oxy_options track_changes="on"?>
