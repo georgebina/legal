@@ -66,9 +66,7 @@ title {
 
 /* list items */
 
-list [numeration = 'alpha']> item {
-    list-style-type:lower-latin; 
-}
+
 
 list > item {
     list-style-type:decimal;
@@ -76,6 +74,9 @@ list > item {
     margin-left:2em;
     margin-top:0.3em;
     margin-bottom:0.3em;
+}
+list[numeration = 'alpha'] > item {
+    list-style-type:lower-latin; 
 }
 
 /* references */
