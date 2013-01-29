@@ -35,34 +35,37 @@
     </xsl:template>
     
     <!-- Number and indent the list items. -->
-    <xsl:template match="legal:item" mode="format">
+    <xsl:template match="legal:list/legal:item" mode="format">
+        <!-- Add an indent-->
+        <xsl:for-each select="ancestor-or-self::legal:item">                    
+            <xsl:text>   </xsl:text>
+        </xsl:for-each>
         <xsl:choose>
             <xsl:when test="string(../@numeration) = 'alpha'">
                 <!-- Simple numeration, like a) , b) , c) -->
-                <!-- Add an indent-->
-                <xsl:for-each select="ancestor-or-self::legal:item">                    
-                    <xsl:text>   </xsl:text>
-                </xsl:for-each>
                 <xsl:number format="a) "/>
             </xsl:when>
             <xsl:otherwise>
-                <!-- Complex decimal numeration, including the section number and the parent items.-->
-                <xsl:text> </xsl:text>
-                <xsl:for-each select="ancestor::legal:section">
-                    <xsl:value-of select="count(preceding-sibling::legal:section) + 1"/>
-                    <xsl:text>.</xsl:text>
-                </xsl:for-each>
-                
-                <!-- An interesting element, very powerful -->
+                <!-- Use numbers -->
                 <xsl:number level="multiple" format="1. "/>
             </xsl:otherwise>
-        </xsl:choose>
-        
+        </xsl:choose>        
+        <xsl:apply-templates mode="format"/>
+        <xsl:text>&#10;</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="legal:section/legal:item" mode="format">
+        <xsl:text>&#10;</xsl:text>
+        <xsl:value-of select="count(../preceding-sibling::legal:section) + 1"/>
+        <xsl:text>.</xsl:text>
+        <!-- An interesting element, very powerful -->
+        <xsl:number level="multiple" format="1. "/>
         <xsl:apply-templates mode="format"/>
         <xsl:if test="count(following-sibling::legal:item) != 0">            
             <xsl:text>&#10;</xsl:text>
         </xsl:if>
     </xsl:template>
+    
     
     <xsl:template match="legal:important" mode="format">
         <xsl:text>&#10;</xsl:text>
