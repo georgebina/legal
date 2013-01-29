@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="../css/legal-document.css"?>
 <eula xmlns="http://www.oxygenxml.com/legal-document" revisionDate="2013-01-11+02:00">
     <info>
         <title>oXygen XML <phrase product="EDITOR">Editor</phrase><phrase product="AUTHOR"
@@ -41,77 +40,71 @@
     </section>
     <section xml:id="license_grants">
         <title>LICENSE GRANTS</title>
-        <list numeration="numeric">
-            <item>Trial Period License. You may download and use the Software for free for thirty
-                (30) days after installation ("Trial Period"). During the Trial Period, Syncro
-                grants You a limited, non-exclusive, non-transferable, non-renewable license to copy
-                and use the Software for evaluation purposes only and not for any commercial use. At
-                Syncro discretion, Syncro may provide limited support through email or discussion
-                forums at Syncro web site. The evaluation copy of the Software contains a feature
-                that will automatically disable the Software at the end of Trial Period. Syncro will
-                have no liability to you if this feature disables the Software.</item>
-            <item>License After Trial Period. This Software is licensed, not sold. During Trial
-                Period, You have the option of paying a license fee in order to use the Software
-                after expiration of the Trial Period. The Software is available as Enterprise
-                Edition, Professional Edition or Academic/Non-profit Edition and can be licensed
-                either on a subscription or perpetual basis. Upon your payment of the license fee
-                and subject to the terms and conditions contained herein, Syncro or its authorized
-                reseller provides you with a License Key and grants you a limited, non-exclusive,
-                non-transferable license to: <list numeration="alpha">
-                    <item>use the Software on a Named User basis meaning specific individuals are
-                        authorized to access the Software and the total number of named users may
-                        not exceed the total number licensed by You.</item>
-                    <item>copy the Software in machine-readable form solely for backup
-                        purposes.</item>
-                </list>If you do not pay the license fee before the Trial Period expires, the
-                present License will be immediately terminated and you lose any right to the
-                Software.</item>
-            <item>The Named User of the Software may install and use the Software on as many
-                computers (including operating systems) as he or she likes.</item>
-            <item product="EDITOR">Academic Edition Software. Unlike Enterprise or Professional
-                Edition that is available for commercial usage, the Academic Edition is available
-                for educational and non-commercial purposes only. In order to use this edition,You
-                must be a "Qualified Educational User". To determine whether you are a Qualified
-                Educational User, please review the academic eligibility requirements at:
-                http://www.oxygenxml.com/academic or contact Syncro (support@oxygenxml.com)</item>
-            <item product="EDITOR">An academic classroom license designed to support educators using
-                the Software for classroom teaching is available on request.</item>
-            <item> Floating License: If you are using the Software under the control of a Floating
-                license, you may: <list numeration="alpha">
-                    <item>install the Software on an unlimited number of computers that are
-                        connected to the designated network (there has to be a TCP/IP connection
-                        between the machines)</item>
-                    <item>use the Software by no more than the authorized number of concurrent
-                        users.</item>
-                </list> A separate license is required for each additional concurrent user and/or
-                network on which the Software is used. Syncro will provide you with a license code
-                key that enables the Software for a Floating license up to the authorized number of
-                concurrent users. </item>
-            <item>Subscription. If You licensed the Software on a subscription basis, your rights to
-                use the Software are limited to the subscription period that shall be indicated in
-                your accepted order. In order to use the subscription you must register the
-                activation code provided to you at the time of purchase and receive a License Key.
-                Your license subscription will start on the date you receive the License Key, not
-                from the date of purchase. After the expiration of your subscription, You are
-                legally obligated to discontinue your use of Software and remove the Software from
-                your system.</item>
-            <item>Pre-release license. Notwithstanding anything to the contrary in this Agreement,
-                if Software is designated as pre-release or beta software, then you may use the
-                Software in a manner consistent with the terms of this Agreement solely for
-                evaluation purposes only for the term of the pre-release time period, which is
-                specified elsewhere in the Software, or upon the commercial release of the Software.
-                Syncro may never commercially release the Pre-release Software You acknowledge that
-                all Software designated as pre-release or beta Software may contain bugs, may not
-                operate properly or perform all intended functions, may interfere with the
-                functioning of other software applications, and may cause errors, data loss or other
-                problems. YOUR USE OF PRE-RELEASE SOFTWARE IS AT YOUR OWN
-                <?oxy_comment_start author="stefan" timestamp="20120620T092040+0300" comment="Shall we add a feedback clause? Something like:
+        <item>Trial Period License. You may download and use the Software for free for thirty (30)
+            days after installation ("Trial Period"). During the Trial Period, Syncro grants You a
+            limited, non-exclusive, non-transferable, non-renewable license to copy and use the
+            Software for evaluation purposes only and not for any commercial use. At Syncro
+            discretion, Syncro may provide limited support through email or discussion forums at
+            Syncro web site. The evaluation copy of the Software contains a feature that will
+            automatically disable the Software at the end of Trial Period. Syncro will have no
+            liability to you if this feature disables the Software.</item>
+        <item>License After Trial Period. This Software is licensed, not sold. During Trial Period,
+            You have the option of paying a license fee in order to use the Software after
+            expiration of the Trial Period. The Software is available as Enterprise Edition,
+            Professional Edition or Academic/Non-profit Edition and can be licensed either on a
+            subscription or perpetual basis. Upon your payment of the license fee and subject to the
+            terms and conditions contained herein, Syncro or its authorized reseller provides you
+            with a License Key and grants you a limited, non-exclusive, non-transferable license to:
+                <list numeration="alpha">
+                <item>use the Software on a Named User basis meaning specific individuals are
+                    authorized to access the Software and the total number of named users may not
+                    exceed the total number licensed by You.</item>
+                <item>copy the Software in machine-readable form solely for backup purposes.</item>
+            </list>If you do not pay the license fee before the Trial Period expires, the present
+            License will be immediately terminated and you lose any right to the Software.</item>
+        <item>The Named User of the Software may install and use the Software on as many computers
+            (including operating systems) as he or she likes.</item>
+        <item product="EDITOR">Academic Edition Software. Unlike Enterprise or Professional Edition
+            that is available for commercial usage, the Academic Edition is available for
+            educational and non-commercial purposes only. In order to use this edition,You must be a
+            "Qualified Educational User". To determine whether you are a Qualified Educational User,
+            please review the academic eligibility requirements at:
+            http://www.oxygenxml.com/academic or contact Syncro (support@oxygenxml.com)</item>
+        <item product="EDITOR">An academic classroom license designed to support educators using the
+            Software for classroom teaching is available on request.</item>
+        <item> Floating License: If you are using the Software under the control of a Floating
+            license, you may: <list numeration="alpha">
+                <item>install the Software on an unlimited number of computers that are connected to
+                    the designated network (there has to be a TCP/IP connection between the
+                    machines)</item>
+                <item>use the Software by no more than the authorized number of concurrent
+                    users.</item>
+            </list>A separate license is required for each additional concurrent user and/or network
+            on which the Software is used. Syncro will provide you with a license code key that
+            enables the Software for a Floating license up to the authorized number of concurrent
+            users. </item>
+        <item>Subscription. If You licensed the Software on a subscription basis, your rights to use
+            the Software are limited to the subscription period that shall be indicated in your
+            accepted order. In order to use the subscription you must register the activation code
+            provided to you at the time of purchase and receive a License Key. Your license
+            subscription will start on the date you receive the License Key, not from the date of
+            purchase. After the expiration of your subscription, You are legally obligated to
+            discontinue your use of Software and remove the Software from your system.</item>
+        <item>Pre-release license. Notwithstanding anything to the contrary in this Agreement, if
+            Software is designated as pre-release or beta software, then you may use the Software in
+            a manner consistent with the terms of this Agreement solely for evaluation purposes only
+            for the term of the pre-release time period, which is specified elsewhere in the
+            Software, or upon the commercial release of the Software. Syncro may never commercially
+            release the Pre-release Software You acknowledge that all Software designated as
+            pre-release or beta Software may contain bugs, may not operate properly or perform all
+            intended functions, may interfere with the functioning of other software applications,
+            and may cause errors, data loss or other problems. YOUR USE OF PRE-RELEASE SOFTWARE IS
+            AT YOUR OWN
+            <?oxy_comment_start author="stefan" timestamp="20120620T092040+0300" comment="Shall we add a feedback clause? Something like:
 &quot;You agree to promptly report to Syncro any bugs, usability or performance problems you experience using the pre-release or beta Software, and you grant Syncro an unrestricted, royalty-free right to use all such feedback for purposes or correcting and/or enhancing the Software and developing other products.&quot;"?><?oxy_comment_start author="george" timestamp="20120620T165103+0300" comment="I agree!" mid="2"?>RISK<?oxy_comment_end?><?oxy_comment_end mid="2"?>.</item>
-            <item>Not for resale.</item>
-            <item> Certain rights are not granted under this Agreement, but may be available under a
-                separate agreement. If you would like to enter into a distribution agreement contact
-                Syncro (support@oxygenxml.com)</item>
-        </list>
+        <item> Certain rights are not granted under this Agreement, but may be available under a
+            separate agreement. If you would like to enter into a distribution agreement contact
+            Syncro (support@oxygenxml.com)</item>
     </section>
     <section xml:id="license_restrictions">
         <title>LICENSE RESTRICTIONS</title>
