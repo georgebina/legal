@@ -1,7 +1,7 @@
 @import "legal-document.css";
 @namespace xml "http://www.w3.org/XML/1998/namespace";
 
-item[xml|id]:before{
+section > item:before{
     content :
       counter(section) "." counter(item-counter) ". "
       oxy_textfield(
@@ -9,25 +9,31 @@ item[xml|id]:before{
             columns, 20) !important;
 } 
 
-
-section[xml|id]:before{
+list > item:before{
     content :
       oxy_textfield(
             edit, "@xml:id",
-            columns, 40);
+            columns, 20) !important;
 } 
 
-addendum[xml|id]:before{
+section:before{
     content :
       oxy_textfield(
             edit, "@xml:id",
-            columns, 40);
+            columns, 40)!important;
 } 
-important[xml|id]:before{
+
+addendum:before{
     content :
       oxy_textfield(
             edit, "@xml:id",
-            columns, 40);
+            columns, 40)!important;
+} 
+important:before{
+    content :
+      oxy_textfield(
+            edit, "@xml:id",
+            columns, 40)!important;
 }
 
 
