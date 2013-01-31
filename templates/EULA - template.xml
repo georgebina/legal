@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eula xmlns="http://www.oxygenxml.com/legal-document">
+  <info>
+    <title>Product End User License Agreement</title>
+  </info>
+  <important>THIS SOFTWARE END USER LICENSE AGREEMENT ("EULA") IS A LEGAL AGREEMENT BETWEEN YOU
+    (EITHER AN INDIVIDUAL OR, IF PURCHASED OR OTHERWISE ACQUIRED BY OR FOR AN ENTITY, A SINGLE LEGAL
+    ENTITY) AND Company. READ IT CAREFULLY BEFORE COMPLETING THE INSTALLATION PROCESS AND USING THIS
+    SOFTWARE. IT PROVIDES A LICENSE TO USE THIS SOFTWARE AND CONTAINS WARRANTY INFORMATION AND
+    LIABILITY DISCLAIMERS. BY DOWNLOADING OR INSTALLING THE SOFTWARE YOU ARE INDICATING YOUR ASSENT
+    TO THE TERMS OF THIS LICENSE. IF YOU DO NOT AGREE TO ALL OF THE FOLLOWING TERMS, DO NOT DOWNLOAD
+    OR INSTALL THE SOFTWARE OR DISCONTINUE USE IMMEDIATELY AND DESTROY ALL COPIES IN YOUR
+    POSSESSION.</important>
+  <section>
+    <title>DEFINITION</title>
+    <list numeration="alpha">
+      <item>"Company" means ...</item>
+    </list>
+  </section>
+  <section>
+    <title>LICENSE GRANTS</title>
+  </section>
+  <section>
+    <title>OWNERSHIP AND INTELLECTUAL PROPERTY RIGHTS</title>
+  </section>
+  <section>
+    <title>PATENT AND COPYRIGHT INDEMNITY</title>
+  </section>
+  <section>
+    <title>LIMITATION OF LIABILITY</title>
+  </section>
+  <section>
+    <title>TERMINATION</title>
+  </section>
+</eula>
