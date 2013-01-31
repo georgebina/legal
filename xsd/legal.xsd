@@ -48,7 +48,7 @@
             <xs:documentation>Main section title</xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:choice minOccurs="1">
+        <xs:choice minOccurs="0">
           <xs:element ref="item" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>Subsection content</xs:documentation>
