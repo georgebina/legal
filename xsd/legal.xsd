@@ -158,12 +158,12 @@
           <xs:documentation>Information about the product being licensed.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element ref="important">
+      <xs:element ref="important" minOccurs="0">
         <xs:annotation>
           <xs:documentation>Important note about this agreement</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:choice maxOccurs="unbounded">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
         <xs:element ref="section">
           <xs:annotation>
             <xs:documentation>A main section of this agreement.</xs:documentation>
