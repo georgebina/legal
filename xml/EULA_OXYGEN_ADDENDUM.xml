@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addendum xmlns="http://www.oxygenxml.com/legal-document"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:id="addendum"
-    range="CLASS DEPARTMENTAL SITE">
+    range="CLASS DEPARTMENTAL SITE" edition="ACADEMIC">
     <info>
-        <title>oXygen XML Editor <phrase edition="ACADEMIC">Academic</phrase><phrase
-                edition="PROFESSIONAL">Professional</phrase>
-            <phrase edition="ENTERPRISE">Enterprise</phrase><phrase range="CLASS"
-                >Classroom</phrase><phrase range="DEPARTMENTAL">Departmental</phrase><phrase
-                range="SITE">Site</phrase> License Agreement - Addendum</title>
+        <title>oXygen XML Editor Academic <phrase range="CLASS">Classroom</phrase><phrase
+                range="DEPARTMENTAL">Departmental</phrase><phrase range="SITE">Site</phrase> License
+            Agreement - Addendum</title>
     </info>
     <important>THIS IS AN
         ADDENDUM<?oxy_insert_start author="stefan" timestamp="20120620T142100+0300"?> (THE
@@ -19,10 +17,8 @@
         <title>Scope</title>
         <item>The provisions of this <phrase range="CLASS">Classroom</phrase><phrase
                 range="DEPARTMENTAL">Departmental</phrase><phrase range="SITE">Site</phrase> License
-            apply to the oXygen XML <phrase edition="ACADEMIC">Academic</phrase><phrase
-                edition="PROFESSIONAL">Professional</phrase><phrase edition="ENTERPRISE"
-                >Enterprise</phrase> Edition. In the event of a conflict between the provisions of
-            this Addendum and the Agreement,
+            apply to the oXygen XML Academic Edition. In the event of a conflict between the
+            provisions of this Addendum and the Agreement,
             the<?oxy_delete author="stefan" timestamp="20120620T142147+0300" content="se"?> Addendum
             provisions shall apply.</item>
     </section>
@@ -67,17 +63,15 @@
                     within a 3 mile radius around Your address (the "Site Location"). All copies of
                     the Software must be removed from each computer that is taken out of regular use
                     at the facilities of the Site Location. </item>
-                <item><phrase edition="ACADEMIC">Use the Software solely in non-commercial teaching
-                        and research programs.</phrase> You are permitted to distribute copies of
-                    the Software to the members, staff, and <phrase edition="ACADEMIC">students,
-                        officers,</phrase> employees ("Recipients") within the licensed Site
-                    Location. Recipients may not keep or use the Software when they finish their
-                    courses or leave the Site Location. </item>
-                <item edition="ACADEMIC">Install the Software on a personal computer used by the
-                    Recipient covered by this license at home for instructional preparation
-                    only.</item>
-                <item edition="ACADEMIC"> Individual teachers covered by this license are entitled
-                    to a free Home Edition license.</item>
+                <item>Use the Software solely in non-commercial teaching and research programs. You
+                    are permitted to distribute copies of the Software to the members, staff, and
+                    students, officers, employees ("Recipients") within the licensed Site Location.
+                    Recipients may not keep or use the Software when they finish their courses or
+                    leave the Site Location. </item>
+                <item>Install the Software on a personal computer used by the Recipient covered by
+                    this license at home for instructional preparation only.</item>
+                <item> Individual teachers covered by this license are entitled to a free Home
+                    Edition license.</item>
             </list></item>
     </section>
     <section>
@@ -93,13 +87,12 @@
                 may not distribute copies to personnel in other <phrase range="CLASS"
                     >classrooms</phrase><phrase range="DEPARTMENTAL">departments or
                     institutions</phrase><phrase range="SITE">Site Locations</phrase>.</item>
-            <item edition="ACADEMIC">When schools or educational institutions acquire the <phrase
-                    range="CLASS">Classroom</phrase><phrase range="DEPARTMENTAL"
-                    >Departmental</phrase><phrase range="SITE">Site</phrase> License, the Software
-                can only be installed to the computers in one <phrase range="DEPARTMENTAL"
-                    >department</phrase><phrase range="SITE">Site Location</phrase><phrase
-                    range="CLASS">classroom at a time and previous installations should be
-                    uninstalled</phrase>.</item>
+            <item>When schools or educational institutions acquire the <phrase range="CLASS"
+                    >Classroom</phrase><phrase range="DEPARTMENTAL">Departmental</phrase><phrase
+                    range="SITE">Site</phrase> License, the Software can only be installed to the
+                computers in one <phrase range="DEPARTMENTAL">department</phrase><phrase
+                    range="SITE">Site Location</phrase><phrase range="CLASS">classroom at a time and
+                    previous installations should be uninstalled</phrase>.</item>
         </list>
     </section>
 </addendum>
