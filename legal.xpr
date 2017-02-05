@@ -1,956 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="14.2">
+<project version="19.0">
     <meta>
         <filters directoryPatterns="" filePatterns="" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="14.2" xml:space="preserve">
-                <map>
+            <serialized version="19.0" xml:space="preserve">
+                <serializableOrderedMap>
                     <entry>
-                        <String>document.types</String>
-                        <documentTypeDescriptor-array>
-                            <documentTypeDescriptor>
-                                <field name="name">
-                                    <String>EULA</String>
-                                </field>
-                                <field name="schemaDescriptor">
-                                    <docTypeSchema>
-                                        <field name="type">
-                                            <Integer>2</Integer>
-                                        </field>
-                                        <field name="uri">
-                                            <String>${pdu}/xsd/legal-document.xsd</String>
-                                        </field>
-                                    </docTypeSchema>
-                                </field>
-                                <field name="classpath">
-                                    <String-array/>
-                                </field>
-                                <field name="authorExtensionDescriptor">
-                                    <authorExtension>
-                                        <field name="cssDescriptors">
-                                            <cssFile-array>
-                                                <cssFile>
-                                                    <field name="href">
-                                                        <String>${pdu}/css/legal-document.css</String>
-                                                    </field>
-                                                    <field name="title">
-                                                        <String>Legal Document CSS</String>
-                                                    </field>
-                                                    <field name="alternate">
-                                                        <Boolean>false</Boolean>
-                                                    </field>
-                                                </cssFile>
-                                                <cssFile>
-                                                    <field name="href">
-                                                        <String>${pdu}/css/legal-document-editIDs.css</String>
-                                                    </field>
-                                                    <field name="title">
-                                                        <String>Edit IDs</String>
-                                                    </field>
-                                                    <field name="alternate">
-                                                        <Boolean>true</Boolean>
-                                                    </field>
-                                                </cssFile>
-                                            </cssFile-array>
-                                        </field>
-                                        <field name="mergeCSSsFromDocument">
-                                            <Boolean>false</Boolean>
-                                        </field>
-                                        <field name="actionDescriptors">
-                                            <action-array>
-                                                <action>
-                                                    <field name="id">
-                                                        <String>add.section</String>
-                                                    </field>
-                                                    <field name="name">
-                                                        <String>Add section</String>
-                                                    </field>
-                                                    <field name="description">
-                                                        <String>Add a new section</String>
-                                                    </field>
-                                                    <field name="largeIconPath">
-                                                        <String>/images/Section20.png</String>
-                                                    </field>
-                                                    <field name="smallIconPath">
-                                                        <String>/images/Section16.gif</String>
-                                                    </field>
-                                                    <field name="accessKey">
-                                                        <String></String>
-                                                    </field>
-                                                    <field name="accelerator">
-                                                        <String>M1 M3 S</String>
-                                                    </field>
-                                                    <field name="actionModes">
-                                                        <actionMode-array>
-                                                            <actionMode>
-                                                                <field name="xpathCondition">
-                                                                    <String>ancestor-or-self::*:section</String>
-                                                                </field>
-                                                                <field name="argValues">
-                                                                    <map>
-                                                                        <entry>
-                                                                            <String>fragment</String>
-                                                                            <String>&lt;section xmlns="http://www.oxygenxml.com/legal-document">
-  &lt;title>&lt;/title>
-  &lt;item>&lt;/item>
-&lt;/section></String>
-                                                                        </entry>
-                                                                        <entry>
-                                                                            <String>insertLocation</String>
-                                                                            <String>ancestor-or-self::*:section[1]</String>
-                                                                        </entry>
-                                                                        <entry>
-                                                                            <String>insertPosition</String>
-                                                                            <String>After</String>
-                                                                        </entry>
-                                                                    </map>
-                                                                </field>
-                                                                <field name="operationID">
-                                                                    <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-                                                                </field>
-                                                            </actionMode>
-                                                            <actionMode>
-                                                                <field name="xpathCondition">
-                                                                    <String>ancestor-or-self::*:important</String>
-                                                                </field>
-                                                                <field name="argValues">
-                                                                    <map>
-                                                                        <entry>
-                                                                            <String>fragment</String>
-                                                                            <String>&lt;section xmlns="http://www.oxygenxml.com/legal-document">
-  &lt;title>&lt;/title>
-  &lt;item>&lt;/item>
-&lt;/section></String>
-                                                                        </entry>
-                                                                        <entry>
-                                                                            <String>insertLocation</String>
-                                                                            <String>ancestor-or-self::*:important[1]</String>
-                                                                        </entry>
-                                                                        <entry>
-                                                                            <String>insertPosition</String>
-                                                                            <String>After</String>
-                                                                        </entry>
-                                                                    </map>
-                                                                </field>
-                                                                <field name="operationID">
-                                                                    <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-                                                                </field>
-                                                            </actionMode>
-                                                            <actionMode>
-                                                                <field name="xpathCondition">
-                                                                    <String>self::*:eula or self::*:addendum</String>
-                                                                </field>
-                                                                <field name="argValues">
-                                                                    <map>
-                                                                        <entry>
-                                                                            <String>fragment</String>
-                                                                            <String>&lt;section xmlns="http://www.oxygenxml.com/legal-document">
-  &lt;title>&lt;/title>
-  &lt;item>&lt;/item>
-&lt;/section></String>
-                                                                        </entry>
-                                                                        <entry>
-                                                                            <String>insertLocation</String>
-                                                                            <String></String>
-                                                                        </entry>
-                                                                        <entry>
-                                                                            <String>insertPosition</String>
-                                                                            <String>After</String>
-                                                                        </entry>
-                                                                    </map>
-                                                                </field>
-                                                                <field name="operationID">
-                                                                    <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-                                                                </field>
-                                                            </actionMode>
-                                                            <actionMode>
-                                                                <field name="xpathCondition">
-                                                                    <String>ancestor-or-self::*:eula[child::*:important]</String>
-                                                                </field>
-                                                                <field name="argValues">
-                                                                    <map>
-                                                                        <entry>
-                                                                            <String>fragment</String>
-                                                                            <String>&lt;section xmlns="http://www.oxygenxml.com/legal-document">
-  &lt;title>&lt;/title>
-  &lt;item>&lt;/item>
-&lt;/section></String>
-                                                                        </entry>
-                                                                        <entry>
-                                                                            <String>insertLocation</String>
-                                                                            <String>ancestor-or-self::*:eula[1]/*:important</String>
-                                                                        </entry>
-                                                                        <entry>
-                                                                            <String>insertPosition</String>
-                                                                            <String>After</String>
-                                                                        </entry>
-                                                                    </map>
-                                                                </field>
-                                                                <field name="operationID">
-                                                                    <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-                                                                </field>
-                                                            </actionMode>
-                                                            <actionMode>
-                                                                <field name="xpathCondition">
-                                                                    <String>ancestor-or-self::*:eula/*:info</String>
-                                                                </field>
-                                                                <field name="argValues">
-                                                                    <map>
-                                                                        <entry>
-                                                                            <String>fragment</String>
-                                                                            <String>&lt;important xmlns="http://www.oxygenxml.com/legal-document">
-&lt;/important></String>
-                                                                        </entry>
-                                                                        <entry>
-                                                                            <String>insertLocation</String>
-                                                                            <String>ancestor-or-self::*:eula[1]/*:info</String>
-                                                                        </entry>
-                                                                        <entry>
-                                                                            <String>insertPosition</String>
-                                                                            <String>After</String>
-                                                                        </entry>
-                                                                    </map>
-                                                                </field>
-                                                                <field name="operationID">
-                                                                    <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-                                                                </field>
-                                                            </actionMode>
-                                                        </actionMode-array>
-                                                    </field>
-                                                </action>
-                                                <action>
-                                                    <field name="id">
-                                                        <String>add.item</String>
-                                                    </field>
-                                                    <field name="name">
-                                                        <String>Add item</String>
-                                                    </field>
-                                                    <field name="description">
-                                                        <String>Add a new item</String>
-                                                    </field>
-                                                    <field name="largeIconPath">
-                                                        <String>/images/ListItem20.gif</String>
-                                                    </field>
-                                                    <field name="smallIconPath">
-                                                        <String>/images/ListItem16.gif</String>
-                                                    </field>
-                                                    <field name="accessKey">
-                                                        <String></String>
-                                                    </field>
-                                                    <field name="accelerator">
-                                                        <String>M1 M3 I</String>
-                                                    </field>
-                                                    <field name="actionModes">
-                                                        <actionMode-array>
-                                                            <actionMode>
-                                                                <field name="xpathCondition">
-                                                                    <String>self::*:section or self::*:list</String>
-                                                                </field>
-                                                                <field name="argValues">
-                                                                    <map>
-                                                                        <entry>
-                                                                            <String>fragment</String>
-                                                                            <String>&lt;item xmlns="http://www.oxygenxml.com/legal-document">
-&lt;/item></String>
-                                                                        </entry>
-                                                                        <entry>
-                                                                            <String>insertLocation</String>
-                                                                            <String></String>
-                                                                        </entry>
-                                                                        <entry>
-                                                                            <String>insertPosition</String>
-                                                                            <String>After</String>
-                                                                        </entry>
-                                                                    </map>
-                                                                </field>
-                                                                <field name="operationID">
-                                                                    <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-                                                                </field>
-                                                            </actionMode>
-                                                            <actionMode>
-                                                                <field name="xpathCondition">
-                                                                    <String>ancestor-or-self::*:item</String>
-                                                                </field>
-                                                                <field name="argValues">
-                                                                    <map>
-                                                                        <entry>
-                                                                            <String>fragment</String>
-                                                                            <String>&lt;item xmlns="http://www.oxygenxml.com/legal-document">
-&lt;/item></String>
-                                                                        </entry>
-                                                                        <entry>
-                                                                            <String>insertLocation</String>
-                                                                            <String>ancestor-or-self::*:item[1]</String>
-                                                                        </entry>
-                                                                        <entry>
-                                                                            <String>insertPosition</String>
-                                                                            <String>After</String>
-                                                                        </entry>
-                                                                    </map>
-                                                                </field>
-                                                                <field name="operationID">
-                                                                    <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-                                                                </field>
-                                                            </actionMode>
-                                                            <actionMode>
-                                                                <field name="xpathCondition">
-                                                                    <String>ancestor-or-self::*:title[parent::*:section/*:list]</String>
-                                                                </field>
-                                                                <field name="argValues">
-                                                                    <map>
-                                                                        <entry>
-                                                                            <String>fragment</String>
-                                                                            <String>&lt;item xmlns="http://www.oxygenxml.com/legal-document">
-&lt;/item></String>
-                                                                        </entry>
-                                                                        <entry>
-                                                                            <String>insertLocation</String>
-                                                                            <String>ancestor-or-self::*:section/*:list[1]</String>
-                                                                        </entry>
-                                                                        <entry>
-                                                                            <String>insertPosition</String>
-                                                                            <String>Inside as first child</String>
-                                                                        </entry>
-                                                                    </map>
-                                                                </field>
-                                                                <field name="operationID">
-                                                                    <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-                                                                </field>
-                                                            </actionMode>
-                                                            <actionMode>
-                                                                <field name="xpathCondition">
-                                                                    <String>ancestor-or-self::*:title[parent::*:section]</String>
-                                                                </field>
-                                                                <field name="argValues">
-                                                                    <map>
-                                                                        <entry>
-                                                                            <String>fragment</String>
-                                                                            <String>&lt;item xmlns="http://www.oxygenxml.com/legal-document">
-&lt;/item></String>
-                                                                        </entry>
-                                                                        <entry>
-                                                                            <String>insertLocation</String>
-                                                                            <String>ancestor-or-self::*:title[1]</String>
-                                                                        </entry>
-                                                                        <entry>
-                                                                            <String>insertPosition</String>
-                                                                            <String>After</String>
-                                                                        </entry>
-                                                                    </map>
-                                                                </field>
-                                                                <field name="operationID">
-                                                                    <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-                                                                </field>
-                                                            </actionMode>
-                                                        </actionMode-array>
-                                                    </field>
-                                                </action>
-                                                <action>
-                                                    <field name="id">
-                                                        <String>insert.xinclude</String>
-                                                    </field>
-                                                    <field name="name">
-                                                        <String>Insert XInclude</String>
-                                                    </field>
-                                                    <field name="description">
-                                                        <String>Insert an XInclude reference</String>
-                                                    </field>
-                                                    <field name="largeIconPath">
-                                                        <String>/images/XInclude20.gif</String>
-                                                    </field>
-                                                    <field name="smallIconPath">
-                                                        <String>/images/XInclude16.gif</String>
-                                                    </field>
-                                                    <field name="accessKey">
-                                                        <String></String>
-                                                    </field>
-                                                    <field name="accelerator">
-                                                        <null/>
-                                                    </field>
-                                                    <field name="actionModes">
-                                                        <actionMode-array>
-                                                            <actionMode>
-                                                                <field name="xpathCondition">
-                                                                    <String>self::*:eula</String>
-                                                                </field>
-                                                                <field name="argValues">
-                                                                    <map/>
-                                                                </field>
-                                                                <field name="operationID">
-                                                                    <String>ro.sync.ecss.extensions.commons.operations.InsertXIncludeOperation</String>
-                                                                </field>
-                                                            </actionMode>
-                                                        </actionMode-array>
-                                                    </field>
-                                                </action>
-                                            </action-array>
-                                        </field>
-                                        <field name="menubarDescriptor">
-                                            <menu>
-                                                <field name="label">
-                                                    <String>Menu</String>
-                                                </field>
-                                                <field name="accessKey">
-                                                    <null/>
-                                                </field>
-                                                <field name="iconPath">
-                                                    <null/>
-                                                </field>
-                                                <field name="menuEntriesDescriptorList">
-                                                    <menuEntry-array/>
-                                                </field>
-                                            </menu>
-                                        </field>
-                                        <field name="popupMenuDescriptor">
-                                            <menu>
-                                                <field name="label">
-                                                    <String>Contextual menu</String>
-                                                </field>
-                                                <field name="accessKey">
-                                                    <null/>
-                                                </field>
-                                                <field name="iconPath">
-                                                    <null/>
-                                                </field>
-                                                <field name="menuEntriesDescriptorList">
-                                                    <menuEntry-array/>
-                                                </field>
-                                            </menu>
-                                        </field>
-                                        <field name="toolbarDescriptor">
-                                            <toolbar>
-                                                <field name="id">
-                                                    <String>Toolbar</String>
-                                                </field>
-                                                <field name="type">
-                                                    <Integer>2</Integer>
-                                                </field>
-                                                <field name="largeIconPath">
-                                                    <null/>
-                                                </field>
-                                                <field name="smallIconPath">
-                                                    <null/>
-                                                </field>
-                                                <field name="toolbarEntriesDescriptorList">
-                                                    <toolbarEntry-array>
-                                                        <toolbarItem>
-                                                            <field name="actionID">
-                                                                <String>add.section</String>
-                                                            </field>
-                                                        </toolbarItem>
-                                                        <toolbarItem>
-                                                            <field name="actionID">
-                                                                <String>add.item</String>
-                                                            </field>
-                                                        </toolbarItem>
-                                                        <toolbarItem>
-                                                            <field name="actionID">
-                                                                <String>insert.xinclude</String>
-                                                            </field>
-                                                        </toolbarItem>
-                                                    </toolbarEntry-array>
-                                                </field>
-                                            </toolbar>
-                                        </field>
-                                        <field name="additionalToolbarsDescriptors">
-                                            <null/>
-                                        </field>
-                                        <field name="contextualItems">
-                                            <contextProvider>
-                                                <field name="items">
-                                                    <contextItem-array/>
-                                                </field>
-                                                <field name="removeItems">
-                                                    <null/>
-                                                </field>
-                                            </contextProvider>
-                                        </field>
-                                        <field name="tableSupportClassName">
-                                            <null/>
-                                        </field>
-                                        <field name="tableColWidthSupportClassName">
-                                            <null/>
-                                        </field>
-                                        <field name="customReferencesResolver">
-                                            <null/>
-                                        </field>
-                                        <field name="authorExtensionStateListener">
-                                            <null/>
-                                        </field>
-                                        <field name="attributesRecognizer">
-                                            <null/>
-                                        </field>
-                                    </authorExtension>
-                                </field>
-                                <field name="templatesLocations">
-                                    <String-array>
-                                        <String>${pd}/templates</String>
-                                    </String-array>
-                                </field>
-                                <field name="xmlCatalogs">
-                                    <String-array/>
-                                </field>
-                                <field name="description">
-                                    <String>Document type for EULA documents</String>
-                                </field>
-                                <field name="doctypeRules">
-                                    <documentTypeRule-array>
-                                        <documentTypeRule>
-                                            <field name="namespace">
-                                                <String>http://www.oxygenxml.com/legal-document</String>
-                                            </field>
-                                            <field name="rootElem">
-                                                <String>eula</String>
-                                            </field>
-                                            <field name="fileName">
-                                                <String>*</String>
-                                            </field>
-                                            <field name="publicID">
-                                                <String>*</String>
-                                            </field>
-                                            <field name="javaRuleClass">
-                                                <String></String>
-                                            </field>
-                                            <field name="attributeLocalName">
-                                                <String>*</String>
-                                            </field>
-                                            <field name="attributeNamespace">
-                                                <String>*</String>
-                                            </field>
-                                            <field name="attributeValue">
-                                                <String>*</String>
-                                            </field>
-                                        </documentTypeRule>
-                                        <documentTypeRule>
-                                            <field name="namespace">
-                                                <String>http://www.oxygenxml.com/legal-document</String>
-                                            </field>
-                                            <field name="rootElem">
-                                                <String>addendum</String>
-                                            </field>
-                                            <field name="fileName">
-                                                <String>*</String>
-                                            </field>
-                                            <field name="publicID">
-                                                <String>*</String>
-                                            </field>
-                                            <field name="javaRuleClass">
-                                                <String></String>
-                                            </field>
-                                            <field name="attributeLocalName">
-                                                <String>*</String>
-                                            </field>
-                                            <field name="attributeNamespace">
-                                                <String>*</String>
-                                            </field>
-                                            <field name="attributeValue">
-                                                <String>*</String>
-                                            </field>
-                                        </documentTypeRule>
-                                    </documentTypeRule-array>
-                                </field>
-                                <field name="scenarios">
-                                    <scenario-array/>
-                                </field>
-                                <field name="validationScenarios">
-                                    <validationScenario-array/>
-                                </field>
-                                <field name="defaultValidationScenarios">
-                                    <null/>
-                                </field>
-                                <field name="defaultTransformationScenarios">
-                                    <null/>
-                                </field>
-                                <field name="extensionsBundleClassName">
-                                    <null/>
-                                </field>
-                                <field name="useImposedInitialPage">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="imposedInitialPage">
-                                    <String>Author</String>
-                                </field>
-                                <field name="elementLocatorExtension">
-                                    <null/>
-                                </field>
-                                <field name="schemaManagerFilterExtension">
-                                    <null/>
-                                </field>
-                                <field name="authorSWTDndExtension">
-                                    <null/>
-                                </field>
-                                <field name="textSWTDndExtension">
-                                    <null/>
-                                </field>
-                                <field name="authorSwingDndExtension">
-                                    <null/>
-                                </field>
-                                <field name="cssStylesFilterExtension">
-                                    <null/>
-                                </field>
-                                <field name="attributesValueEditor">
-                                    <null/>
-                                </field>
-                                <field name="priority">
-                                    <Integer>3</Integer>
-                                </field>
-                                <field name="xmlNodeCustomizerExtension">
-                                    <null/>
-                                </field>
-                                <field name="externalObjectInsertionHandler">
-                                    <null/>
-                                </field>
-                            </documentTypeDescriptor>
-                        </documentTypeDescriptor-array>
+                        <String>additional.frameworks.directories</String>
+                        <String-array>
+                            <String>${pd}\</String>
+                        </String-array>
                     </entry>
                     <entry>
-                        <String>document.types.order</String>
-                        <documentTypeEntry-array>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>4/oxygen-collada-release-1.0.0/collada.framework/COLLADA 1.4.1</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>4/oxygen-collada-release-1.0.0/collada.framework/COLLADA 1.5.0</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>2/internal/EULA</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/jats/jats.framework/JATS</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/ant/ant.framework/ANT</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/dita/dita.framework/DITA</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/dita/ditamap.framework/DITA Map</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/dita/ditaval.framework/DITAVAL</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/docbook/docbook4.framework/DocBook 4</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/docbook/docbook5.framework/DocBook 5</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/docbook/targetset.framework/Docbook Targetset</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/ead/ead.framework/EAD</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/fo/fo.framework/FO</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/kml/kml.framework/KML</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/mathml/mathml.framework/MathML</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/ncx/ncx.framework/NCX</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/nvdl/nvdl.framework/NVDL</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/xml/xmlcatalog.framework/OASIS XML Catalog</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/ocf/ocf.framework/OCF</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/odf/odf.framework/ODF</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/ooxml/ooxml.framework/OOXML</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/opf/opf2.0.framework/OPF 2.0</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/opf/opf3.0.framework/OPF 3.0</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/relaxng/relaxng.framework/Relax NG</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/svg/svg.framework/SVG</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/xslt/saxon.framework/Saxon</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/schematron/schematron.framework/Schematron</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/schematron/schematron15.framework/Schematron 1.5</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/stratml/startml1.framework/StratML Part 1 (Strategic Plan)</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/stratml/startml2.framework/StratML Part 2 (Perfomance Plans and Reports)</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/tei/teip5odd.framework/TEI ODD</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/tei/teip4.framework/TEI P4 (deprecated)</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/tei/teip5.framework/TEI P5</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/widgets/widgets.framework/Widgets</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/xhtml/xhtml.framework/XHTML</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/xmlschema/xmlschema.framework/XML Schema</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/xmlspec/xmlspec.framework/XMLSpec</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/xproc/xproc.framework/XProc</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/xslt/xslt.framework/XSLT</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/xspec/xspec.framework/XSpec</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/samples/form-controls.framework/Form Controls (Sample)</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/samples/personal.framework/Personal (Sample)</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/samples/travel-guide.framework/Travel Guide (Sample)</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>true</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                        </documentTypeEntry-array>
+                        <String>document.types</String>
+                        <documentTypeDescriptor-array/>
                     </entry>
                     <entry>
                         <String>editor.detect.indent.on.open</String>
@@ -966,6 +29,10 @@
                     </entry>
                     <entry>
                         <String>key.editor.document.type.association.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.editor.document.type.custom.locations.option.pane</String>
                         <Boolean>true</Boolean>
                     </entry>
                     <entry>
@@ -995,6 +62,12 @@
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1002,6 +75,12 @@
                                             </field>
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
                                             </field>
                                         </profileConditionValue>
                                     </profileConditionValue-array>
@@ -1032,6 +111,12 @@
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1039,6 +124,12 @@
                                             </field>
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
                                             </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
@@ -1048,6 +139,12 @@
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1055,6 +152,12 @@
                                             </field>
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
                                             </field>
                                         </profileConditionValue>
                                     </profileConditionValue-array>
@@ -1085,6 +188,12 @@
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1092,6 +201,12 @@
                                             </field>
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
                                             </field>
                                         </profileConditionValue>
                                     </profileConditionValue-array>
@@ -1122,6 +237,12 @@
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1129,6 +250,12 @@
                                             </field>
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
                                             </field>
                                         </profileConditionValue>
                                     </profileConditionValue-array>
@@ -1159,6 +286,12 @@
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1166,6 +299,12 @@
                                             </field>
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
                                             </field>
                                         </profileConditionValue>
                                     </profileConditionValue-array>
@@ -1196,6 +335,12 @@
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1203,6 +348,12 @@
                                             </field>
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
                                             </field>
                                         </profileConditionValue>
                                     </profileConditionValue-array>
@@ -1233,6 +384,12 @@
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                     </profileConditionValue-array>
                                 </field>
@@ -1262,6 +419,12 @@
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1269,6 +432,12 @@
                                             </field>
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
                                             </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
@@ -1278,6 +447,12 @@
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1285,6 +460,12 @@
                                             </field>
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
                                             </field>
                                         </profileConditionValue>
                                     </profileConditionValue-array>
@@ -1315,6 +496,12 @@
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1322,6 +509,12 @@
                                             </field>
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
                                             </field>
                                         </profileConditionValue>
                                     </profileConditionValue-array>
@@ -1352,6 +545,12 @@
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1359,6 +558,12 @@
                                             </field>
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
                                             </field>
                                         </profileConditionValue>
                                     </profileConditionValue-array>
@@ -1389,6 +594,12 @@
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1396,6 +607,12 @@
                                             </field>
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
                                             </field>
                                         </profileConditionValue>
                                     </profileConditionValue-array>
@@ -1426,6 +643,12 @@
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1433,6 +656,12 @@
                                             </field>
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
                                             </field>
                                         </profileConditionValue>
                                     </profileConditionValue-array>
@@ -1463,6 +692,12 @@
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1470,6 +705,12 @@
                                             </field>
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
                                             </field>
                                         </profileConditionValue>
                                     </profileConditionValue-array>
@@ -1500,6 +741,12 @@
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1507,6 +754,12 @@
                                             </field>
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
                                             </field>
                                         </profileConditionValue>
                                     </profileConditionValue-array>
@@ -1537,6 +790,12 @@
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1544,6 +803,12 @@
                                             </field>
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
                                             </field>
                                         </profileConditionValue>
                                     </profileConditionValue-array>
@@ -1574,6 +839,12 @@
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1581,6 +852,12 @@
                                             </field>
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
                                             </field>
                                         </profileConditionValue>
                                     </profileConditionValue-array>
@@ -1611,6 +888,12 @@
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1618,6 +901,12 @@
                                             </field>
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
                                             </field>
                                         </profileConditionValue>
                                     </profileConditionValue-array>
@@ -1648,6 +937,12 @@
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1655,6 +950,12 @@
                                             </field>
                                             <field name="description">
                                                 <String>Sample value. You can change it from the "Profiling/Conditional Text" preferences page.</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
                                             </field>
                                         </profileConditionValue>
                                     </profileConditionValue-array>
@@ -1685,6 +986,12 @@
                                             <field name="description">
                                                 <String>XML Author - Oxygen XML Author - Authoring part</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1692,6 +999,12 @@
                                             </field>
                                             <field name="description">
                                                 <String>Oxygen XML Developer - XML development part</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
                                             </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
@@ -1701,6 +1014,12 @@
                                             <field name="description">
                                                 <String>Oxygen XML Diff - xml diff solution</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1708,6 +1027,12 @@
                                             </field>
                                             <field name="description">
                                                 <String>Oxygen XML Editor - the complete suite</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
                                             </field>
                                         </profileConditionValue>
                                     </profileConditionValue-array>
@@ -1738,6 +1063,12 @@
                                             <field name="description">
                                                 <String>Academic classroom type</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1745,6 +1076,12 @@
                                             </field>
                                             <field name="description">
                                                 <String>Corporate wide license</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
                                             </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
@@ -1754,6 +1091,12 @@
                                             <field name="description">
                                                 <String>Academic departmental type</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1762,6 +1105,12 @@
                                             <field name="description">
                                                 <String> Site type</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1769,6 +1118,12 @@
                                             </field>
                                             <field name="description">
                                                 <String>user based </String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
                                             </field>
                                         </profileConditionValue>
                                     </profileConditionValue-array>
@@ -1799,6 +1154,12 @@
                                             <field name="description">
                                                 <String>Academic edition of the Software</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1807,6 +1168,12 @@
                                             <field name="description">
                                                 <String>Enterprise edition of the Software</String>
                                             </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
+                                            </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1814,6 +1181,12 @@
                                             </field>
                                             <field name="description">
                                                 <String>Profesional edition of the Software</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <null/>
                                             </field>
                                         </profileConditionValue>
                                     </profileConditionValue-array>
@@ -1856,6 +1229,15 @@
                                 <field name="conditionSetName">
                                     <String>Editor</String>
                                 </field>
+                                <field name="ditavalFile">
+                                    <null/>
+                                </field>
+                                <field name="useDITAVAL">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="shortcut">
+                                    <null/>
+                                </field>
                             </profileConditionsSetInfo>
                             <profileConditionsSetInfo>
                                 <field name="conditions">
@@ -1879,6 +1261,15 @@
                                 </field>
                                 <field name="conditionSetName">
                                     <String>Developer</String>
+                                </field>
+                                <field name="ditavalFile">
+                                    <null/>
+                                </field>
+                                <field name="useDITAVAL">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="shortcut">
+                                    <null/>
                                 </field>
                             </profileConditionsSetInfo>
                             <profileConditionsSetInfo>
@@ -1904,6 +1295,15 @@
                                 <field name="conditionSetName">
                                     <String>Author</String>
                                 </field>
+                                <field name="ditavalFile">
+                                    <null/>
+                                </field>
+                                <field name="useDITAVAL">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="shortcut">
+                                    <null/>
+                                </field>
                             </profileConditionsSetInfo>
                             <profileConditionsSetInfo>
                                 <field name="conditions">
@@ -1927,6 +1327,15 @@
                                 </field>
                                 <field name="conditionSetName">
                                     <String>Diff</String>
+                                </field>
+                                <field name="ditavalFile">
+                                    <null/>
+                                </field>
+                                <field name="useDITAVAL">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="shortcut">
+                                    <null/>
                                 </field>
                             </profileConditionsSetInfo>
                             <profileConditionsSetInfo>
@@ -1958,6 +1367,15 @@
                                 <field name="conditionSetName">
                                     <String>Editor Academic Classroom</String>
                                 </field>
+                                <field name="ditavalFile">
+                                    <null/>
+                                </field>
+                                <field name="useDITAVAL">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="shortcut">
+                                    <null/>
+                                </field>
                             </profileConditionsSetInfo>
                             <profileConditionsSetInfo>
                                 <field name="conditions">
@@ -1988,6 +1406,15 @@
                                 <field name="conditionSetName">
                                     <String>Editor Academic Department</String>
                                 </field>
+                                <field name="ditavalFile">
+                                    <null/>
+                                </field>
+                                <field name="useDITAVAL">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="shortcut">
+                                    <null/>
+                                </field>
                             </profileConditionsSetInfo>
                             <profileConditionsSetInfo>
                                 <field name="conditions">
@@ -2017,6 +1444,15 @@
                                 </field>
                                 <field name="conditionSetName">
                                     <String>Editor Academic Site</String>
+                                </field>
+                                <field name="ditavalFile">
+                                    <null/>
+                                </field>
+                                <field name="useDITAVAL">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="shortcut">
+                                    <null/>
                                 </field>
                             </profileConditionsSetInfo>
                         </profileConditionsSetInfo-array>
@@ -2150,6 +1586,9 @@
                                 <field name="outputFile">
                                     <File>${cfd}/${cfn}.txt</File>
                                 </field>
+                                <field name="outputResource">
+                                    <String>${cfd}\${cfn}.txt</String>
+                                </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>false</Boolean>
                                 </field>
@@ -2189,11 +1628,14 @@
                             </scenario>
                             <scenario>
                                 <field name="advancedOptionsMap">
-                                    <map>
+                                    <serializableOrderedMap>
                                         <entry>
                                             <String>Saxon-PE</String>
                                             <xsltSaxonBAdvancedOptions>
                                                 <field name="allowCallsOnExtensionFunctions">
+                                                    <Boolean>true</Boolean>
+                                                </field>
+                                                <field name="registerSaxonCEExtensions">
                                                     <Boolean>true</Boolean>
                                                 </field>
                                                 <field name="showVersionWarnings">
@@ -2240,7 +1682,7 @@
                                                 </field>
                                             </xsltSaxonBAdvancedOptions>
                                         </entry>
-                                    </map>
+                                    </serializableOrderedMap>
                                 </field>
                                 <field name="name">
                                     <String>legal</String>
@@ -2283,6 +1725,9 @@
                                 </field>
                                 <field name="outputFile">
                                     <File>out.xml</File>
+                                </field>
+                                <field name="outputResource">
+                                    <String>out.xml</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>false</Boolean>
@@ -2335,7 +1780,7 @@
                         <String>validation.scenarios</String>
                         <validationScenario-array/>
                     </entry>
-                </map>
+                </serializableOrderedMap>
             </serialized>
         </options>
     </meta>
