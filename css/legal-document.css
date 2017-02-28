@@ -1,4 +1,20 @@
 @namespace xml "http://www.w3.org/XML/1998/namespace";
+@namespace oxy "http://www.oxygenxml.com/extensions/author";
+
+eula{      
+  border: 1px solid #c6c6c6;
+  background-color:white;      
+  margin: 0.25in auto;
+  width: 21.59cm; 
+  min-height:10cm;       
+  
+  padding: 20px;
+}
+
+oxy|reference {
+    display: inline-block;
+}
+
 section, important, para, list, item, title, eula {
     display:block;
 }
